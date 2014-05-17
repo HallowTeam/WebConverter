@@ -14,22 +14,50 @@
 
 	<body>
 		<div class="y-center">
+
 			<div class="row collapse">
-				<div class="column small-10"><input type="text" placeholder="Base 10 expr" autocomplete="off" id="inputBase10" /></div>
-				<div class="column small-2"><span class="postfix radius">Base 10</span></div>
+				<div class="column small-10 large-12 small-centered">
+					<div class="row collapse">
+						<div class="column small-10"><input type="text" placeholder="Base 10 expr" autocomplete="off" id="inputBase10" autofocus /></div>
+						<div class="column small-2"><span class="postfix radius">Base 10</span></div>
+					</div>
+				</div>
 			</div>
 			<div class="row collapse">
-				<div class="column small-10"><input type="text" placeholder="Base 02 expr" autocomplete="off" id="inputBase02" /></div>
-				<div class="column small-2"><span class="postfix radius">Base 02</span></div>
+				<div class="column small-10 large-12 small-centered">
+					<div class="row collapse">
+						<div class="column small-10"><input type="text" placeholder="Base 02 expr" autocomplete="off" id="inputBase02" /></div>
+						<div class="column small-2"><span class="postfix radius">Base 02</span></div>
+					</div>
+				</div>
 			</div>
 			<div class="row collapse">
-				<div class="column small-10"><input type="text" placeholder="Base 08 expr" autocomplete="off" id="inputBase08" /></div>
-				<div class="column small-2"><span class="postfix radius">Base 08</span></div>
+				<div class="column small-10 large-12 small-centered">
+					<div class="row collapse">
+						<div class="column small-10"><input type="text" placeholder="Base 08 expr" autocomplete="off" id="inputBase08" /></div>
+						<div class="column small-2"><span class="postfix radius">Base 08</span></div>
+					</div>
+				</div>
 			</div>
 			<div class="row collapse">
-				<div class="column small-10"><input type="text" placeholder="Base 16 expr" autocomplete="off" id="inputBase16" /></div>
-				<div class="column small-2"><span class="postfix radius">Base 16</span></div>
+				<div class="column small-10 large-12 small-centered">
+					<div class="row collapse">
+						<div class="column small-10"><input type="text" placeholder="Base 16 expr" autocomplete="off" id="inputBase16" /></div>
+						<div class="column small-2"><span class="postfix radius">Base 16</span></div>
+					</div>
+				</div>
 			</div>
+			<div class="row collapse">
+				<div class="column small-10 large-12 small-centered">
+					<div class="row collapse text-center">
+						<div class="column small-3"><input id="radioBase64" name="radioBase" type="radio" checked /><label for="radioBase64">64 bits</label></div>
+						<div class="column small-3"><input id="radioBase32" name="radioBase" type="radio" /><label for="radioBase32">32 bits</label></div>
+						<div class="column small-3"><input id="radioBase16" name="radioBase" type="radio" /><label for="radioBase16">16 bits</label></div>
+						<div class="column small-3"><input id="radioBase08" name="radioBase" type="radio" /><label for="radioBase08">08 bits</label></div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<script src="./js/vendor/jquery.js"></script>
@@ -37,6 +65,7 @@
 		<script src="./js/foundation.min.js"></script>
 		<script src="./js/bigint.js"></script>
 		<script src="./js/jtopic.js"></script>
+		<script src="./bases.js"></script>
 		<script src="./index.js"></script>
 	</body>
 </html>
